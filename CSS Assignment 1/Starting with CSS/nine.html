@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nine</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #4ad420;
+            border: solid black 2px;
+        }
+        form{
+            padding: 50px;
+            border: solid black 2px;
+        }
+        label{
+            padding: 5px;
+        }
+        input[type="text"]{
+            background-color: #a00c0c;
+        }
+        input[type="email"]{
+            background-color: #18b8e4;
+        }
+        input[type="password"]{
+            background-color: #a00c7b;
+        }
+        input[type="submit"]{
+            background-color: #1123a6;
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <form action="get">
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username"> <br>
+            <label for="email">Email: </label> 
+            <input type="email" name="email" id="email"> <br>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password"> <br>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </main>
+</body>
+</html>
