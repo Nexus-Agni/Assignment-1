@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@500&family=Poppins&display=swap');
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(201, 200, 200);
+        }
+        .head{
+            text-align: center;
+        }
+        h1.head {
+            color: #2d67db;
+            padding: 0;
+            margin: 0;
+        }
+        p.head{
+            color: #808080;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .card{
+             width: 400px;
+             height: 400px;
+             background-color: aliceblue;
+             margin: 20px;
+             margin-top: 40px;
+             border-radius: 20px;
+        }
+        .card > img{
+            width: 350px;
+            height: 200px;
+            margin: 20px 25px;
+        }
+        .card>h4{
+            color: #2d67db;
+            margin: 5px 20px;
+        }
+        .card>p{
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .name{
+            margin-top: 10px;
+            margin-bottom: 7px;
+            margin-left: 20px;
+            font-size: small;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="head" >Community Programs</h1>
+    <p class="head" >Open to all pro live classes on youtube for free</p>
+    <div class="container">
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6448ca86508654220671ad2d.jpg" alt="Thumbnail 1">
+            <h4>Masterclass understanding APIs in web development with roadmap</h4>
+            <p class="name">Hitesh Choudhury</p>
+            <p>FREE</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6463025b6977cc64d3ddf8b7.jpg" alt="Thumbnail 2">
+            <h4>Masterclass cracking the coding interview linkedlist</h4>
+            <p class="name">Vishwa Mohan</p>
+            <p>FREE</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64426c32508654fb0f7168bd.jpg" alt="Thumbnail 3">
+            <h4>Masterclass importance of DSA in modern programming</h4>
+            <p class="name">Priya Bhatia</p>
+            <p>FREE</p>
+        </div>
+    </div>
+</body>
+</html>

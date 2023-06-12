@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@500&family=Poppins&display=swap');
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            margin: 0px;
+            padding: 10px;
+            position: sticky;
+            top: 0px;
+            box-shadow: 0px 5px 5px rgb(145, 142, 142); 
+        }
+        .right{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            margin: 0px 10px;
+        }
+        .right>.create{
+            margin: 5px 70px 5px 5px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+        }
+        .content>h1{
+            font-size: 55px;
+            margin: 0px 70px;
+            font-weight: 600;
+        }
+        .content>p{
+            color: gray;
+            margin: 20px 70px;
+        }
+        #sign-in{
+            color:#1768c4;
+            font-size: large;
+            padding: 12px 27px;
+            background-color: white;
+            border: #b7b6b6 1px solid;
+            border-radius: 5px;
+        }
+        .create{
+            color:aliceblue;
+            background-color: #1768c4;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: large;
+            margin: 20px 30px 20px 70px;
+            border: none;
+        }
+        #pic{
+            width: 60vw;
+            height: 90vh;
+        }
+        #logo{
+            width: 120px;
+            height: 30px;
+            padding: 5px 45px;
+        }
+        .for-work{
+            font-size: medium;
+            font-weight: 600;
+            text-decoration: none;
+            color: #1768c4 ;
+            padding: 10px 30px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .for-work:hover{
+            background-color: #c7d8e4;
+        }
+        .image{
+            margin-right: 0;
+            padding-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="shadow">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Gmail2020.logo.png" alt="Logo" id="logo">
+        <div class="right">
+            <button class="for-work">For Work</button>
+            <button id="sign-in">Sign in</button>
+            <button class="create">
+                Create an Account
+            </button>
+        </div>
+    </div>
+    </nav>
+    <main class="container">
+        <div class="content">
+            <h1>Secure, smart, and easy to use email</h1>
+            <p>Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place</p>
+            <button class="create">
+                Create an Account
+            </button>
+            <button class="for-work">For Work</button>
+        </div>
+        <div class="image">
+            <img src="https://lh3.googleusercontent.com/PWXM4hp9lRRezHTV86SqLwhRQMz4_Lk08jll3GkWBvBZy_Uk6kvUvwIrVilwaIW2mHZJoccchG6o9a5UdOJEwQPf9oJGmOGSglo3VW0=rw-e365-w2880" alt="Google image" id="pic">
+        </div>
+    </main>
+</body>
+</html>

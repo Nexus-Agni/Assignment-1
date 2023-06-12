@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight</title>
+    <style>
+        body{
+            background-color: #353434;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50% at 50% 50%);
+            border: 10px solid white;
+            border-radius: 100px;
+        }
+        #one{
+            position: absolute;
+            left: 25%;
+            z-index: 4;
+        }
+        #two{
+            position: absolute;
+            left: 35%;
+            z-index: 3;
+        }
+        #three{
+            position: absolute;
+            left: 45%;
+            z-index: 2;
+        }
+        #four{
+            position: absolute;
+            left: 55%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/14579361/pexels-photo-14579361.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1" id="one">
+        <img src="https://images.pexels.com/photos/17153155/pexels-photo-17153155/free-photo-of-friends-portrait-photography-women-fashion-editorial-fashion.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 2" id="two">
+        <img src="https://images.pexels.com/photos/17079798/pexels-photo-17079798/free-photo-of-black-and-white-landscape-man-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3" id="three">
+        <img src="https://images.pexels.com/photos/17026701/pexels-photo-17026701/free-photo-of-light-sea-landscape-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 4" id="four">
+    </div>
+</body>
+</html>

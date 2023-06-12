@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six</title>
+    <style>
+        body{
+            background-color: #1c1b1b;
+        }
+        .container{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           height: 98vh;
+        }
+        img{
+            margin-bottom: 50px;
+        }
+        .search-bar{
+            border: 1px solid white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            height: 45px;
+            width: 40vw;
+        }
+        .icon{
+            height: 30px;
+            width: 30px;
+            margin: 10px 30px;
+        }
+        input{
+            height: 50%;
+            margin: 10px 50px 10px 0px;
+            padding: 10px 40px 5px 10px;
+            justify-self: start;
+            width: 80%;
+            background-color: #1c1b1b;
+            border: none;
+            color: white;
+        }
+        input:focus{
+            border: none;
+            outline: none;
+        }
+        #search-icon{
+            justify-self: start;
+            padding: 0px 7px;
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+        #lens-icon{
+            justify-self: end;
+            margin-right: 20px;
+            margin-left: 15px;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            margin-top: 7px;
+            
+        }
+        #microphone-icon{
+            justify-self: end;
+            margin-right: 15px;
+            width: 20px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Logo" >
+        </div>
+        <div class="search-bar">
+            <img src="https://cdn-icons-png.flaticon.com/128/8915/8915520.png" alt="Search icon" class="icon" id="search-icon">
+            <input type="search" name="search" id="search">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1432px-Google_mic.svg.png" alt="Microphone icon" class="icon" id="microphone-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Google_Lens_Icon.svg/2048px-Google_Lens_Icon.svg.png" alt="Lens icon" class="icon" id="lens-icon">
+        </div>
+    </div>
+</body>
+</html>
