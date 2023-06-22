@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@500&family=Poppins&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    width: 100vw;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #323131;
+    padding: 0.75rem;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    justify-self: flex-start;
+}
+.logo > img{
+    width: 50px;
+    height: 30px;
+}
+.links{
+    justify-self: center;
+}
+.links > *{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px; 
+}
+.menu{
+    display: none;
+}
+.login{
+    justify-self: flex-end;
+    margin-right: 30px;
+}
+.login > button{
+    padding: 7px 40px;
+    border-radius: 5px;
+    background-color: #194dbd;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    margin-right: 10px
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: 1% 3%;
+    justify-content: center;
+}
+.content img{
+    width: 60%;
+    height: 50%;
+}
+.content h4, h1{
+    color: #1448c2;
+}
+.content{
+    margin: 2% 3% ; 
+    height: fit-content;  
+}
+.image{
+    width: 80%;
+    margin: 5%;
+    margin-right: 5%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.nav-container{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40vh;
+    color: white;
+}
+.one-card{
+    width: 30%;
+    margin: 10px 60px;
+}
+.foot-navigation, .support{
+    margin: 0px 30px;
+}
+.foot-navigation ul, .support ul{
+    list-style-type: none;
+}
+.foot-navigation a, .support a, li{
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+.newsletter > input[type="button"]{
+    padding: 15px 50px;
+    margin: 3px 50px 50px 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #194dbd;
+    color: white;
+}
+.newsletter > input[type="email"]{
+    padding: 15px 100px 15px 5px;
+    margin: 50px 50px 3px 50px;
+    border-radius: 5px;
+    border: none;
+}
+.newsletter > input[type="email"]:focus{
+    outline: none;
+}
+@media screen and (max-width: 1128px) {
+    .links, .login{
+        visibility: hidden;
+    }
+    nav{
+        display: flex;
+        width: 98vw;
+    }
+    .menu{
+        display: block;
+        justify-self: end;
+        margin-left: 50%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 98vw;
+        justify-content: center;
+        margin: 5% 10%;
+    }
+    .content{
+        margin: 0 3% ;   
+    }
+    .nav-container{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 200vh;
+        color: white;
+    }
+}
