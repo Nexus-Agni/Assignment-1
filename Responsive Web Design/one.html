@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@500&family=Poppins&display=swap');
+        body{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: #323131;
+            padding: 10px;
+            align-items: center;
+        }
+        .logo{
+            justify-self: flex-start;
+        }
+        .logo > img{
+            width: 50px;
+            height: 30px;
+        }
+        .links{
+            justify-self: center;
+        }
+        .links > *{
+            text-decoration: none;
+            color: white;
+            padding: 0 10px; 
+        }
+        .menu{
+            display: none;
+        }
+        .login{
+            justify-self: flex-end;
+            margin-right: 30px;
+        }
+        .login > button{
+            padding: 7px 40px;
+            border-radius: 5px;
+            background-color: #194dbd;
+            color: white;
+            border: none;
+            outline: none;
+            font-weight: 500;
+        }
+        @media screen and (max-width: 525px) {
+            .links, .login{
+                visibility: hidden;
+            }
+            nav{
+                display: flex;
+                width: 98vw;
+            }
+            .menu{
+                display: block;
+                justify-self: end;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://www.getonecard.app/images/logo_black.svg" alt="Logo">
+        </div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="login">
+            <button>Login</button>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</body>
+</html>

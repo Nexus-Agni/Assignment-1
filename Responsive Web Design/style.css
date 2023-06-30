@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@500&family=Poppins&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    width: 100vw;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #323131;
+    padding: 0.75rem;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    justify-self: flex-start;
+}
+.logo > img{
+    width: 50px;
+    height: 30px;
+}
+.links{
+    justify-self: center;
+}
+.links > *{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px; 
+}
+.menu{
+    display: none;
+}
+.login{
+    justify-self: flex-end;
+    margin-right: 30px;
+}
+.login > button{
+    padding: 7px 40px;
+    border-radius: 5px;
+    background-color: #194dbd;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: 1% 3%;
+    justify-content: center;
+}
+.content img{
+    width: 60%;
+    height: 50%;
+}
+.content h4, h1{
+    color: #1448c2;
+}
+.content{
+    margin: 2% 3% ; 
+    height: fit-content;  
+}
+.image{
+    width: 80%;
+    margin: 5%;
+    margin-right: 5%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+footer h1{
+    color: #1448c2;
+}
+footer h2{
+    color: white;
+}
+
+@media screen and (max-width: 1128px) {
+    .links, .login{
+        visibility: hidden;
+    }
+    nav{
+        display: flex;
+        width: 98vw;
+    }
+    .menu{
+        display: block;
+        justify-self: end;
+        margin-left: 50%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 98vw;
+        justify-content: center;
+        margin: 5% 10%;
+    }
+    .content{
+        margin: 0 3% ;   
+    }
+    footer{
+        background-color: white;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    footer h1{
+        color: #1448c2;
+    }
+    footer h2{
+        color: black;
+    }
+}
