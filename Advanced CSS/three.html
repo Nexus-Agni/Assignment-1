@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            justify-content: center;
+            /* align-items: center; */
+            background-image: linear-gradient(to top right, skyblue, blue);
+            border-radius: 10px;
+            margin: 10rem;
+        }
+        .container:hover{
+            transform: rotate(270deg);
+        }
+        .top{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .bottom{
+            margin: 0 30px;
+        }
+        button{
+            width: 98%;
+            margin: 5px;
+            background-image: linear-gradient(to right, lightgreen, yellowgreen);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items top">
+            <h1>#01</h1>
+            <h2> Created on: 1/1/2023</h2>
+        </div>
+        <div class="items bottom">
+            <h1>Important Dates</h1>
+            <ul>
+                <li>January 26 - Republic Day</li>
+                <li>August 15 - Independence Day</li>
+                <li>January 23 - Netaji Bose Jayanti</li>
+                <li>August 29 - National Sports Day</li>
+            </ul>
+            <button>Mark as Done</button>
+        </div>
+    </div>
+</body>
+</html>
