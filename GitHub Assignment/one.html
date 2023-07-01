@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One</title>
+    <style>
+        body{
+            background-color: #d2d0d0;
+        }
+        form{
+            background-color: white;
+            width: 300px;
+            height: 270px;
+            display: flex;
+            /* justify-content: center; */
+            text-align: center;
+            flex-direction: column;
+            border-radius: 10px;
+            position: absolute;
+            left: 45%;
+            top: 30%;
+        }
+        input[type="text"] , input[type="password"] {
+            border: none;
+            border-bottom: 1px solid gray;
+            padding: 10px 0px;
+            margin: 0 20px;
+        }
+        input:focus{
+            outline: none;
+        }
+        input[type="submit"] {
+            margin: 0 20px;
+            padding: 7px 0px;
+            border-radius: 5px;
+            background-color: #4665e0fa;
+            color: white;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="get">
+        <h1>LOGIN</h1>
+        <input type="text" name="username" id="username" placeholder="Username">
+        <br>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>

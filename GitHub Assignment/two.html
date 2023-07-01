@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two</title>
+    <style>
+        .container{
+            width: 98vw;
+            height: 98vh;
+            background-color: #d2d0d0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            background-color: white;
+            width: 300px;
+            border-radius: 10px;
+        }
+        form h1{
+            text-align: center;
+        }
+        label{
+            margin-bottom: 10px;
+        }
+        input, select{
+            margin-top: 0px;
+            margin-bottom: 20px;
+            width: 90%;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px 0;
+        }
+        label , input, select {
+            margin-left: 10px;
+        }
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="get">
+            <h1>Signup</h1>
+            <label for="name">Name</label> <br>
+            <input type="text" name="name" id="name"> <br>
+            <label for="batch">Batch</label> <br>
+            <select name="batch" id="batch">
+                <option value="sigma2.0">Sigma 2.0</option>
+                <option value="sigma1.0">Sigma 1.0</option>
+                <option value="CppDSA">C++ & DSA</option>
+                <option value="JavaDSA">Java & DSA</option>
+            </select> <br>
+            <label for="age">Age</label> <br>
+            <input type="number" name="age" id="age"> <br>
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" id="email"> <br>
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" id="password"> <br>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+</body>
+</html>
