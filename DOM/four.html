@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        form > * {
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up Form</h1>
+    <div class="container">
+        <form  onsubmit="Agni(event)">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="minimum 3 charecters"/> <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="enter your email"/> <br>
+            <label for="password">password: </label>
+            <input type="password" name="password" id="password" placeholder="minimum 8 charecters" /> <br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        function Agni(event) {
+            event.preventDefault();
+            let name = document.getElementById("name")
+            let password = document.getElementById("password")
+
+            if (name.value.length >=3 && password.value.length >= 8) {
+                alert("Validation successfull");
+            }
+            else if (name.value.length < 3) {
+                alert("Name must have minimum 3 charecters");
+            }
+            else if (password.value.length < 8) {
+                alert("Password must have minimum 8 charecters")
+            }
+    }
+    </script>
+</body>
+</html>

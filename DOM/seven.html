@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seven</title>
+</head>
+<body>
+    <input type="text" name="search" id="searchInput" placeholder="Search">
+    <h1>Results:</h1>
+    <ul id="listItem">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind CSS</li>
+        <li>GItHub</li>
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    const searchInput = document.getElementById("searchInput");
+    const listItem = document.getElementById("listItem").getElementsByTagName("li"); // array of list item
+
+    searchInput.addEventListener("input", dynamicFilter);
+
+    function dynamicFilter() {
+        const searchValue = searchInput.value.toLowerCase();
+        for (let i=0; i< listItem.length; i++) {
+            const itemText = listItem[i].innerText.toLowerCase();
+            if (itemText.includes(searchValue)) {
+                listItem[i].style.display = "block";
+            } else {
+                listItem[i].style.display = "none";
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six</title>
+</head>
+<body>
+    <div class="parent">
+        <h1>Which is your favourite programming language: </h1>
+        <select name="select" id="select">
+            
+        </select>
+    </div>
+</body>
+<script>
+    
+    let array = ["JavaScript", "Java", "Python", "C++", "Rust", "C", "Swift", "Flutter"]
+    for (let i = 0 ; i<array.length ; i++) {
+        let selection = document.createElement("option")
+        selection.innerText = array[i]
+        document.getElementById("select").append(selection)
+        console.log(selection);
+    }
+</script>
+</html>

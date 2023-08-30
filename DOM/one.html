@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One</title>
+</head>
+<body>
+    <h1>Upload profile picture</h1>
+    <input type="file" name="profiePic" id="profiePic" onchange="showImage()">
+    <img src="" alt="" id="profilePicImage" >
+    <script>
+       let profiePic = document.getElementById("profiePic")
+       let previewImage = document.getElementById("profilePicImage")
+
+       function showImage() {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          previewImage.src = e.target.result;
+        };
+
+        reader.readAsDataURL(profiePic.files[0]);
+       }
+
+        
+    </script>
+</body>
+</html>

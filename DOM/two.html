@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two</title>
+    <style>
+        .dark{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body class=" ">
+    <h1>This is light theme</h1>
+    <button onclick="changeTheme()">Toggle theme</button>
+    <script>
+        function changeTheme() {
+          const bgc = document.body.style.backgroundColor;
+
+          if (bgc === "black"){
+            document.body.style.backgroundColor = "white"
+            document.querySelector("h1").innerText = "This is light theme"
+            document.querySelector("h1").style.color = "black"
+          }
+          else {
+            document.body.style.backgroundColor = "black"
+            document.querySelector("h1").innerText = "This is dark theme"
+            document.querySelector("h1").style.color = "white"
+          }
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three</title>
+    <style>
+        .flex{
+            display: flex;
+            width: 20vw;
+            justify-content: space-around;
+            align-items: center;
+        }
+        button {
+            height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <div class="flex">
+        <button onclick="changePrevious()">Previous</button>
+        <h2>0</h2>
+        <button onclick="changeNext()">Next</button>
+    </div>
+</body>
+<script>
+    let array = []
+    for(let i=0 ; i<100; i++) {
+        array.push(i)
+    }
+    console.log(array);
+    let count = document.querySelector("h2")
+    let index =0 
+    function changeNext() {
+        index = index + 1
+        count.innerText = array[index]
+    }
+    function changePrevious() {
+        if (count.innerText > 0) {
+            index = index - 1
+            count.innerText = array[index]
+        }
+        else {
+            alert("Cannot count below 0")
+        }
+    }
+    
+</script>
+</html>

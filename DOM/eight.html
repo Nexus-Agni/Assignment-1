@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+        }
+        .timer{
+            width: 10rem;
+            height: 3.5rem;
+            font-size: 2rem;
+            border: 1px solid #fff;
+            border-radius: 1rem;
+            padding: 0.25rem 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer" id="timer">
+        <span id="hours">12 </span> :
+        <span id="minutes"> 22</span>:
+        <span id="seconds">10 </span> 
+    </div>
+</body>
+<script>
+    function timer() {
+        let currentTime = new Date();
+        let hours = currentTime.getHours().toString().padStart(2,"0")
+        let minutes = currentTime.getMinutes().toString().padStart(2,"0")
+        let seconds = currentTime.getSeconds().toString().padStart(2,"0")
+
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        // color
+        let hexcode = `#${hours}${minutes}${seconds}`
+
+        document.body.style.backgroundColor = hexcode;
+    }
+
+    setInterval(timer, 1000); // refresh after every 1000ms 
+</script>
+</html>
